@@ -1,0 +1,53 @@
+.card-link {
+    text-decoration: none;
+}
+
+.cHeaing{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.cCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 110px;
+
+}
+
+.communitycard {
+    border: 1px solid #198754;
+    padding: 20%;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.communitycard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(25, 135, 84, 0.7);
+    }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .communitycard {
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .communitycard {
+        padding: 5%;
+    }
+}
+
+/* Rest of your code... */
